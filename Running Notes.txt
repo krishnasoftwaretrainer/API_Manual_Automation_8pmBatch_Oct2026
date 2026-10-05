@@ -1,0 +1,349 @@
+API Testing:
+-----------
+https://reqres.in/: Open
+
+https://restful-api.dev/ : Secured 
+
+Download and Install Postman Tool
+
+This tool we are using to send requests to server, and get responses from server.
+
+Performing api testing by using postman tool is call it as manual testing.
+Interface b/w Client and Server system.
+
+URL: https://restful-api.dev/
+
+URI/URL
+Request Payload: Input JSON 
+Response payload: Output 
+
+GET: To get data from server.
+	Single User
+	Multiple Users
+https://reqres.in/api/users/2
+
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+------------------
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    
+{
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    
+
+POST: To store user data in server.
+URL
+Body/Request payload
+{
+"firstname":"Krishna",
+"surname":"Nall"
+}
+
+{
+"name":"Krishna",
+"mobilenumber":1234567890
+}
+
+Response payload:
+{
+    "firstname": "Krishna",
+    "surname": "Nall",
+    "id": "680",
+    "createdAt": "2026-10-02T14:50:42.334Z"
+}
+201 Created: A new resource was created successfully.
+
+https://www.browserstack.com/
+docs/
+/app-live
+/pricing?product=app-live&cycle=annual
+
+PUT: Update all values
+URL: https://reqres.in/api/users/2
+Body/Request payload
+{
+"firstname":"Krishna",
+"surname":"Nall"
+}
+
+{
+"name":"Krishna",
+"mobilenumber":1234567890
+}
+
+Response payload:
+{
+    "email": "krishna@gmail.com",
+    "first_name": "Krishna",
+    "last_name": "Nalla",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "updatedAt": "2026-10-02 T15:07:17.396Z",
+}
+200 OK: Request successful. The server has responded as required.
+
+PATCH: Specific values update
+URL: https://reqres.in/api/users/2
+Body/Request payload
+{
+"firstname":"Krishna",
+"surname":"Nall"
+}
+
+{
+"name":"Krishna",
+"mobilenumber":1234567890
+}
+
+Response payload:
+{
+    "first_name": "Ramesh",
+    "updatedAt": "2026-10-02 T15:12:26.334Z",
+}
+200 OK: Request successful. The server has responded as required.
+DELETE:
+URL:https://reqres.in/api/users/2
+204 No Content: There is no content to send for this request except for headers.
+
+309ms
+2.17s
+
+Work Space
+
+Collection
+
+Requests 
+
+https://reqres.in/
+
+TCID	Request Type	URI	Request Payload	Response Payload	Status Code
+1	GET	reqres.in	NA	Returns list of users in a page	200
+2	POST	reqres.in	{
+"name": "pavan",
+"job": "trainer"
+}	{
+"name": "pavan",
+"job": "trainer",
+"id": "411",
+"createdAt": "2022-07-18T02:00:32.846Z"
+}	201
+3	PUT	reqres.in	{
+"name": "pavan",
+"job": "engineer"
+}	{
+"name": "pavan",
+"job": "engineer",
+"updatedAt": "2022-07-18T02:04:09.462Z"
+}	200
+4	DELETE	reqres.in	na	na	204
+
+====================
+https://api.restful-api.dev/objects
+{
+{
+    "id": "ff808181a09d98f701a10b8aee477c35",
+    "name": "Krishna",
+    "createdAt": 1791195016775,
+    "data": null
+}
+}
+{
+  "name": "Krishna Laptop",
+  "data": {
+    "brand": "Dell",
+    "price": 50000
+  }
+}
+
+HTTP Status Codes
+• Level 200
+	• 200: OK
+	• 201: Created
+	• 202: Accepted
+	• 203: Non-Authoritative Information
+	• 204: No content
+• Level 400
+	• 400: Bad Request
+	• 401: Unauthorized
+	• 403: Forbidden
+	• 404: Not Found
+	• 409: Conflict
+• Level 500
+	• 500: Internal Server Error
+	• 501: Not Implemented
+	• 502: Bad Gateway
+	• 503: Service Unavailable
+	• 504: Gateway Timeout
+	• 599: Network Timeout
+==========
+C:\Users\HP>npm install -g json-server
+
+added 43 packages in 39s
+
+C:\Users\HP>json-server --version
+1.0.0-beta.15
+json-server studentapis.json
+JSON Server started on PORT :3000
+
+GET     http://localhost:3000/students
+GET     http://localhost:3000/students/101
+POST    http://localhost:3000/students
+PUT     http://localhost:3000/students/101
+PATCH   http://localhost:3000/students/101
+DELETE  http://localhost:3000/students/101
+
+Workspace 
+Collection
+HTTP Methods 
+GET
+POST
+PUT
+DELETE
+
+{
+    "name": "Krishna",
+    "job": "leader",
+    "id": "317",
+    "createdAt": "2026-10-05T14:42:56.249Z",
+	https://api.restful-api.dev/objects
+"id": "ff808181a09d98f701a10c896b857f38",
+    "name": "Oppo Mobile",
+    "createdAt": 1791211694981,
+    "data": {
+        "color": "Cloudy White",
+        "capacity": "128 GB"
+    }
+}
+
+1.Pre-Defined: https://reqres.in/
+2.Access Server: https://api.restful-api.dev/objects
+
+3.Own API's:Products Students USers Emp
+.json  REST 
+
+Node Js:https://nodejs.org/en/download/current 
+C:\Users\HP>node --version
+v24.21.0
+NPM:
+C:\Users\HP>npm --version
+11.19.0
+
+json-server:npm install -g json-server
+json-server --version
+1.0.0-beta.15
+
+{
+    "id": "Bp0rDmQwBFw",
+    "name": "Krishna",
+    "location": "India",
+    "phone": "1234567",
+    "courses": [
+        "Postman",
+        "Rest"
+    ]
+}
+
+Assignment:
+----------
+Prepare Student,Customer,Products,Employess
+
+Import Export 
