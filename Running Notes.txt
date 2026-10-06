@@ -347,3 +347,21 @@ Assignment:
 Prepare Student,Customer,Products,Employess
 
 Import Export 
+Assertions in API:
+----------------
+Will comapre the excepted vs actuval:pass or fail.
+
+pm:
+Some methods to.have.status(200);
+
+Status Codes 
+Response Time 
+Headers
+Body 
+
+pm.test("Status200",()=>                     {pm.response.to.have.status(200);});
+
+pm.test("StatusOK",()=>                     {pm.response.to.have.status("OK");});
+
+
+
