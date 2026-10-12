@@ -17,7 +17,7 @@ pm.test("Status code is 200", () =>
 
 If you want to test for the status code being one of a set, include them all in an array and use one of
 pm.test("Successful POST request", () => {
-    pm.expect(pm.response.code).to.be.oneOf([200,201]);
+    pm.expect(pm.response.code).to.be.oneOf([200,204]);
 });
 
 Check the status code text:

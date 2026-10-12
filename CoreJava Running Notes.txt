@@ -1,0 +1,51 @@
+
+API Testing:2Ways 
+Server:BackEnd:Database:With UI and Without UI 
+Functional Testing:Manual + Automation[Selenium]
+Web Desktop Mobile
+
+
+API:Manual[Postman] + Automation[Rest Assured]
+CRUD:Database
+
+Selenium with Java 
+Rest Assured:To convert manual requests into automation[Script].
+
+Java:Core Java+Advanced Java 
+
+1991 1995 James Gosling Sun Micro Systems
+First Version of Java:Alpha and Beta 
+OAK Oracle Java 
+Even:March 26 
+Odd:September 27
+
+.exe download install set java path 
+Platform:Advanced:IDE:EclipseIDe 
+Basic Concepts+Data Driven+Hybrid+TestNG+BDD
+https://www.oracle.com/in/java/technologies/downloads/#jdk27-windows
+
+https://www.eclipse.org/downloads/packages/release/2026-09/r
+
+Project
+
+Package 
+
+Class 
+
+MainMethod
+
+Body
+
+Compile and Excute 
+
+class and object 
+
+Fruit->Mango Banana 
+
+Basic Concepts + OOPS 
+
+Features:I P DA E 
+
+JDK:JVM JRE 
+
+Pre-define User-define:Rules 

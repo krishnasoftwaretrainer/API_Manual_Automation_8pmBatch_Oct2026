@@ -1,0 +1,121 @@
+5 Categories of Status Codes
+1xx (100-199) - Informational - The request was received, and the server is continuing the process.
+2xx (200-299) - Success - Everything worked as expected 
+3xx (300-399) - Redirection - The resource has moved somewhere else.
+4xx (400-499) - Client Errors - The client (frontend/user) made a mistake.
+5xx (500-599) - Server Errors - Server failed to process a valid request.
+
+100 – Continue
+Meaning:
+The server has received the initial part of the request and the client can continue sending the request.
+
+When to use:
+• Large request body is being sent
+• Client checks whether the server is ready to receive the request
+• Rarely used directly in normal API testing
+
+102 – Processing
+
+Meaning:
+The server has received and is processing the request, but no response is available yet.
+
+When to use:
+• Long-running request is being processed
+• Server needs more time to complete the operation
+• Mainly used with WebDAV APIs
+
+==================================
+200 – OK
+Meaning:
+Request was successful.
+When to use:
+• GET request successfully fetched data
+• PUT/PATCH successfully updated data
+• DELETE completed successfully (sometimes 204 instead)
+
+
+201 – Created
+Meaning:
+Resource was successfully created.
+When to use:
+• POST request creates a new user
+• Creating an order
+• Uploading a file
+
+
+400 – Bad Request
+Meaning:
+Client sent invalid or malformed data.
+When to use:
+• Missing required fields
+• Invalid email format
+• JSON body is incorrect
+
+401 – Unauthorized
+
+Meaning:
+Although the HTTP standard specifies "Unauthorized", semantically this
+ response means "Unauthenticated". 
+The client must authenticate itself to get the requested response.
+
+When to use:
+• Login credentials are missing
+• Authentication token is missing
+• Authentication token is invalid or expired
+• User must authenticate to access the resource
+
+403 – Forbidden
+Meaning:
+User is authenticated but does not have permission.
+When to use:
+• Normal user trying to access admin route
+• Accessing someone else's private data
+
+404 – Not Found
+Meaning:
+Resource does not exist.
+When to use:
+• User ID not found
+• Route not found
+• Product not found
+
+409 – Conflict
+Meaning:
+Request conflicts with current server state.
+When to use:
+• Email already exists during registration
+• Duplicate username
+• Version conflict in updates
+
+422 – Unprocessable Entity
+Meaning:
+Data is valid JSON but logically incorrect.
+
+Difference from 400:
+400 → syntax issue
+422 → validation issue
+When to use:
+• Password too short
+• Age must be > 18
+• Business rule validation fails
+
+500 – Internal Server Error
+Meaning:
+Something broke on the server.
+When to use:
+• Database crashed
+• Unhandled exception
+• Code error
+
+503 – Service Unavailable
+Meaning:
+Server temporarily unavailable.
+When to use:
+• Server under maintenance
+• Too much traffic
+• Downstream service failure 
+
+Common 3xx Codes
+1. 301 – Moved Permanently
+2. 302 – Found (Temporary Redirect)
+3. 308 – Permanent Redirect
