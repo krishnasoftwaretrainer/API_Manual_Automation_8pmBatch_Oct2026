@@ -49,3 +49,68 @@ Features:I P DA E
 JDK:JVM JRE 
 
 Pre-define User-define:Rules 
+
+Compilation:Checking Errors 
+Execution:Giving or Printing output.  
+
+DataTypes and Variables:
+-------------------
+Variable is an Container[Hold/Store the values]
+Variable Declaration and Initialization[Static & Dynamic]
+
+Syntax:datatype variablename=value;
+		int a=10; static 
+Index:0 to n-1  
+Address:Unique:1001
+Name:
+
+1.Primitive:
+---------
+1.Numeric:
+A.Plain Numbers:567
+a.byte:-128 to 127 1byte  130Error 
+b.short:-32768 to 32767 2byte 
+c.int:4bytes 
+d.long:8bytes
+ 
+byte a=10 1byte
+short a=10; 2bytes
+int a=10; 4bytes
+long a=10; 8bytes
+
+B.Point Values
+a.float:121.1234567890 Round 
+b.double:121.123456789012345
+
+2.Non-Numeric:
+a.boolean:true false
+b.char:'B'  'f'  '6'  '#'
+String:"FDSfgdf34345&^%$"
+
+Dynamic initialization of variable values.
+Scanner Class:
+Methods have 2Types:Static and Instance 
+All scanner methods are Instance methods only.
+Instance methods can access through object only.
+Create Object syntax:
+ClassName ObjName=new ClassName();
+Scanner scan=new Scanner();
+
+Assignment:
+--------
+1.Read and Print Student details cover all primitive datatypes static way.
+2.Read and Print Student details cover all primitive datatypes dynamic way.
+3.Read and Print Employee details cover all primitive datatypes static way.
+4.Read and Print Employee details cover all primitive datatypes dynamic way.
+5.Read and Print Customer details cover all primitive datatypes static way.
+6.Read and Print Customers details cover all primitive datatypes dynamic way.
+
+
+
+2.Non-Primitive:
+----
+Arrays
+Strings 
+Class 
+Object
+OOPS
