@@ -114,3 +114,60 @@ Strings
 Class 
 Object
 OOPS
+
+Java Tokens:
+---------
+1.KeyWords/Reserved/BuiltIn :int float if void class main 52 
+
+2.Identifiers:
+class Addition
+package
+Variable
+int a=10; 
+User-Define:Rules 
+
+3.Literals:
+--------
+int a=10; Value/Literal Integer Float String  Char 
+
+4.Constants:Fixed Values.
+--------
+final:It restrict the re-initialization 
+	 It restrict the re-using if method
+
+5.Variables
+6.DataTypes
+
+7.Comments:
+Single Line://
+Multi Line:/*   */
+
+8.Errors:
+-------
+1.Syntax or CompileTime:
+2.RunTime or Exceptions:
+
+9.Types Conversion or Type Casting:
+--------------------------
+Converting the one datatype value into another datatype.
+
+1.Implicit/Automatic/Widening:Small type to Big type.
+byte-short-char-int-long-float-double
+No data loss: 22 22.0
+
+2.Explicit/Manual/Narrowing:Big type to Small type
+double-float-long-int-char-short-byte
+Data loss
+
+Java Operators:
+-------------
+Operator is an Symbol like + > != && etc..
+These symbols we are using to perform operations on either variables or values like 
+2+3		5>3   
+
+1.Arithmetic:+ - * / %  Integer/Float 
+2.Relational:< > <= >= == != Integer/Float Boolean
+3.Logical
+4.Assignment
+5.Unary
+6.Ternary

@@ -20,7 +20,7 @@ public class ScannerClass//User defined Class
 		
 		//String a=scan.next();
 		//String a=scan.nextLine();
-		char a=scan.next().charAt(2);
+		char a=scan.next().charAt(0);
 		System.out.println(a);
 
 
