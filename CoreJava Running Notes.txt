@@ -165,9 +165,95 @@ Operator is an Symbol like + > != && etc..
 These symbols we are using to perform operations on either variables or values like 
 2+3		5>3   
 
+Java Operators:
+-------------
+Operator is an Symbol like + > != && etc..
+These symbols we are using to perform operations on either variables or values like 
+2+3		5>3   
+
 1.Arithmetic:+ - * / %  Integer/Float 
 2.Relational:< > <= >= == != Integer/Float Boolean
-3.Logical
-4.Assignment
-5.Unary
-6.Ternary
+3.Logical:AND && OR && NOT ! Boolean:true false
+			AND 	OR 		NOT 
+true true 	true 	true 	false 
+true false	false	true
+false true	false	true 
+fals false	false	false	true
+ 
+4.Assignment:= a=5;
++=	-=	*=	/=	%=
+a+=5;a=a+5;
+
+b=10;
+a=b+5;
+a=15;
+----
+a=10;
+a+=5;a=a+5;a=15; Normal variable
+
+i++:+1 
+i+2;
+i+=2;i=i+2;
+5.Unary:+ - +5 -10
+
+Increment:++ +1 
+Pre-Increment:++a:
+Post-Increment:b++:
+
+Decrement:-- -1
+Pre-Decrement
+Post-Decrement
+
+6.Ternary: ? :
+
+Control Flow Statements in Java:
+-----------------------
+Sequential flow 
+
+1.Conditional/Branching/Selection:
+A.if() condition:TBS:true FBS:false 
+a.simple-if():TBS Null 
+Syntax:
+if(Condition)
+{
+TBS;
+}
+
+b.if-else():
+Syntax:
+if(Condition)
+{
+TBS;
+}
+else 
+{
+FBS;
+}
+c.else-if() or ladder-if():
+Syntax:
+if(Condition)
+{
+TBS;
+}
+else if(condition)
+{
+TBS;
+}
+else
+{
+FBS;
+}
+
+d.nested-if()
+
+B.switch() condition
+
+2.Looping/Iterative:
+a.for()
+b.while()
+c.do-while()
+d.nested loop
+
+3.Jumping:
+break
+continue
