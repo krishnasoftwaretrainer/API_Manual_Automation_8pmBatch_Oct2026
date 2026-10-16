@@ -244,11 +244,65 @@ else
 FBS;
 }
 
-d.nested-if()
+d.nested-if():
+----------
+Syntax:
+-----
+if(Condition) Outer:T T F 
+{
+if(Condition) Inner:T F 
+{
+Body; TBS;
+}
+else  //Inner 
+{
+FBS;
+}
+}
+else //Outer  
+{
+FBS;
+}
 
-B.switch() condition
+B.switch() condition:
+------------else-if()
+Comparison 
+Syntax:
+------
+switch(Comparison)
+{
+case 1:
+{
+TBS;
+break;
+}
+case 2:
+{
+TBS;
+break;
+}
+default:
+{
+FBS;
+}
 
 2.Looping/Iterative:
+-----------
+Counted Loop:Starting:1 and Ending:10
+for():
+----
+for(InitialValue;Condition;Increment/Decrement)
+{
+Body;
+}
+
+Infinity Loop:ATM 
+while(true)
+{
+Body;
+}
+
+
 a.for()
 b.while()
 c.do-while()
