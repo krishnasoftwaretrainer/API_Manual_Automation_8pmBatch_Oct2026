@@ -303,11 +303,73 @@ Body;
 }
 
 
-a.for()
-b.while()
-c.do-while()
-d.nested loop
+2.Looping/Iterative:
+-----------
+Counted Loop:Starting:1 and Ending:10
+for():
+----
+for(InitialValue;Condition;Increment/Decrement)
+{
+Body;
+}
+
+Infinity Loop:ATM 
+while(true)
+{
+Body;
+}
+
+while():
+------
+Syntax:
+-----
+while(true)
+{
+Body;
+}
+Entry-Control:First Condition then execution of body.
+for()
+while()
+
+Exit-Control:First time without condition excutes the body and from second time onwards it will check the condition.
+
+do-while():
+------
+syntax:
+----
+InitialValue;
+do 
+{
+Body;
+Increment;
+{while(Condition);
+
+Nested Loop:
+----------
+for(InitialValue;Condition;Increment/Decrement)
+{//Rows
+for(InitialValue;Condition;Increment/Decrement)
+{//Columns 
+Body;
+}
+}
+
+//Paterns 
+1	2	3	4	5
+1	2	3	4	5	
+1	2	3	4	5	
+1	2	3	4	5	
+1	2	3	4	5	
 
 3.Jumping:
-break
-continue
+break:Stop/terminates the excution flow.
+break cannot be used outside of a loop or a switch/if.
+continue:Skip the current iteration. 
+continue cannot be used outside of a loop.
+
+Non-Primitive DataTypes:
+-----------
+1.Arrays
+2.Strings 
+3.Class and Object
+4.OOPScontinue

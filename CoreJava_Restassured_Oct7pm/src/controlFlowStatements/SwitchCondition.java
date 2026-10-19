@@ -54,6 +54,7 @@ public class SwitchCondition {
 		{
 			System.out.println("FireFox  Browser Executed");
 			break;
+			//continue;
 		}
 		default :
 		{
