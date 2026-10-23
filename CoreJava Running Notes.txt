@@ -372,4 +372,55 @@ Non-Primitive DataTypes:
 1.Arrays
 2.Strings 
 3.Class and Object
-4.OOPScontinue
+4.OOPS
+
+Arrays:
+------Collection of elements of same datatype.
+int htno=101; 10students
+int htno2=102;
+int htno3=103;
+htno3=104;
+htno3=105;
+
+Syntax:
+datatype variablename[]={Value1,Value2,...};
+int htno[]={101,102,103,104,105,106};
+String snames[]={"Krishna","Ramesh",678};
+float percentages[]={99.99f,88.88f,77.0f};
+
+Static Way and Dynamic Way 
+
+1.Single or One Dimension:SR MC or MR SC 
+2.Two or Double or Multi Dimension:MR MC 
+
+Strings in Java:
+---------------
+Collection of elements of different datatype.
+"ASAdsgdsg232$#%%$&"
+
+1.String Literal 
+2.String new Keyword 
+
+Memory 
+
+a=10 b=10
+name="Krishna"
+
+String Pool Concept:
+
+=:Operator using to assign the value's to variables.
+==:Operator using to compare the memory locations.
+equals():using to compare the values[Case Sensitive].
+
+Basic Concepts:
+OOPS Concepts:
+Methods
+Constructor
+Inheritance 
+Polymorphism
+Method OverLoading
+Method OverRiding
+Data Abstraction
+Interface 
+Encapsulation
+Exception Handling 
