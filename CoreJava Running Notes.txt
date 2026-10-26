@@ -424,3 +424,69 @@ Data Abstraction
 Interface 
 Encapsulation
 Exception Handling 
+
+OOPS:
+----
+Reusability 
+Readability
+Security 
+
+Methods:Block of Code or Set of Satements 
+
+Method Signature:
+---------
+AccessSpecifer ReturnType MethodName(Parameters_List)
+{
+Body;
+}
+
+Pre-define and User-Define methods have 2types
+1.Static:Class reference
+2.Instance/Non-Static:Object reference
+name.length();
+Scanner scan=new Scanner()
+scan.nextInt();
+
+Method Calling:
+--------
+Using ClassName: ClassName.MethodName();
+Using ObjName:ObjName.MethodName();
+
+
+Error: Main method not found in class oops.Calculator1, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+Project:One or more packages and One or more class and One or more methods
+Package:One or more class and One or more methods
+Class:One or more methods 
+
+Sample Method():
+Project Level[public]:Project->Package->Class 
+Package Level[protected]:Package->Class 
+Class Level[private]
+nextInt()
+
+AccessSpecifers or AccessModifiers:
+public:
+Same Package and Same Class
+Same Package and Different Class 
+Different Package and Different Class 
+
+private :
+Same Package and Same Class
+
+protected:
+Same Package and Same Class
+Same Package and Different Class 
+
+default
+
+User-define methods declare 4ways
+------------
+1.Without ReturnType and Without Parameters 
+2.Without ReturnType and With Parameters
+3.With ReturnType and With Parameters
+4.With ReturnType and With Parameters
+
+Constructors and Inheritance
