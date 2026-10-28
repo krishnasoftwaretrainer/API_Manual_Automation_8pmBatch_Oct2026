@@ -490,3 +490,54 @@ User-define methods declare 4ways
 4.With ReturnType and With Parameters
 
 Constructors and Inheritance
+Constructors in Java:
+-------------------
+Sample
+Sample() 
+
+4Pillers of OOPS:
+Inheritance
+Polymorphism
+Data Abstraction
+Encapsulation
+
+Inheritance in Java:
+-----------------
+Parent and Child 
+Child extends Parent
+
+1.Single Level
+2.MultiLevel
+3.Hierarchical 
+4.Multiple
+
+Polymorphism in Java:
+-------------------
+Poly + Morphism =Many Forms 
+
+1.Static or CompileTime:
+Method OverLoading
+One method with different behaviours 
+Multiple methods should declare with same name but different in parameters.
+1.Number of Parameters
+2.Different datatypes
+3.Interchanging of datatypes
+
+2.Dynamic or RunTime:
+Method OverRiding:Inheritance
+Parent class methodname and child class methodname should be same.
+Inherite the child with parent.
+
+Data Abstraction:
+----------------
+Hiding the Implementation 
+FrontEnd:What:Zoom:Parent 
+BackEnd:How 
+
+Declare the only methods at parent class and implement same methods at child class. 
+
+abstract Keyword:0 to 100%
+interface Keyword:100% 
+
+1.100% Data Abstraction
+2.Multiple Inheritance
