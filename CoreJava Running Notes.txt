@@ -541,3 +541,55 @@ interface Keyword:100%
 
 1.100% Data Abstraction
 2.Multiple Inheritance
+
+Polymorphism in Java:
+-------------------
+Poly + Morphism =Many Forms 
+
+1.Static or CompileTime:
+Method OverLoading
+One method with different behaviours 
+Multiple methods should declare with same name but different in parameters.
+1.Number of Parameters
+2.Different datatypes
+3.Interchanging of datatypes
+
+2.Dynamic or RunTime:
+Method OverRiding:Inheritance
+Parent class methodname and child class methodname should be same.
+Inherite the child with parent.
+
+Data Abstraction:
+----------------
+Hiding the Implementation 
+FrontEnd:What:Zoom:Parent 
+BackEnd:How 
+
+Declare the only methods at parent class and implement same methods at child class. 
+
+abstract Keyword:0 to 100%
+interface Keyword:100% 
+
+1.100% Data Abstraction:
+2.Multiple Inheritance:
+
+Encapsulation in Java:
+-----------------
+Hiding the Data:private Accessspecifier
+
+Getter Setter 
+get:View set:update/enter 
+
+Banking:Package
+Customer:Class accnum acname bal  Same Class 
+Employee:Class  
+
+Exception Handling:
+----------------
+try{2}
+catch()
+
+Arthametic 
+Nullpointer
+ArrayIndex 
+
