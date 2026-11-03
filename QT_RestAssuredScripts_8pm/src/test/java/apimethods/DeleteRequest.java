@@ -1,0 +1,32 @@
+package apimethods;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class DeleteRequest {
+
+	@Test
+	public void getusers()
+	{
+		RestAssured.baseURI="https://qualitythoughtnew-employee-api.onrender.com";
+
+		RequestSpecification request=RestAssured.given();
+		
+		Response response=request.delete("/employees/21");
+		
+		response.prettyPrint();
+		int respcode=response.statusCode();
+		System.out.println(respcode);
+		System.out.println(response.statusLine());
+		System.out.println(response.getHeader("Content-Type"));
+		System.out.println(response.getHeaders());
+		
+		response.then().statusCode(200);
+		
+		Assert.assertEquals(respcode, 200);
+	}
+}
