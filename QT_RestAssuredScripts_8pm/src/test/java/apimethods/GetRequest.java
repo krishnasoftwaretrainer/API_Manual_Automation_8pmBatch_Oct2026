@@ -15,8 +15,14 @@ public class GetRequest {
 		RestAssured.baseURI="https://qualitythoughtnew-employee-api.onrender.com";
 
 		RequestSpecification request=RestAssured.given();
+		RestAssured.baseURI="https://qualitythoughtnew-employee-api.onrender.com";
+
+		RequestSpecification request=RestAssured.given();
 		Response response=request.get("/employees/21");
 		response.prettyPrint();
+		
+		//Validations
+		
 		int respcode=response.statusCode();
 		System.out.println(respcode);
 		System.out.println(response.statusLine());

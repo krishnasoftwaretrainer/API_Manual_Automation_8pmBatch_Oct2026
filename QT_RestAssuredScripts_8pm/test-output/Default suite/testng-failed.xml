@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apimethods.GetRequest">
+      <class name="bddAPIMethods.GetUserBDD">
         <methods>
-          <include name="getusers"/>
+          <include name="getuserdata1"/>
         </methods>
-      </class> <!-- apimethods.GetRequest -->
+      </class> <!-- bddAPIMethods.GetUserBDD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

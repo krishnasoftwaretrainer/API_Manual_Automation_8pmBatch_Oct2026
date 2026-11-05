@@ -2,28 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-03T21:04:31 IST" name="Default suite" finished-at="2026-11-03T21:04:33 IST" duration-ms="2347">
+  <suite started-at="2026-11-05T21:02:58 IST" name="Default suite" finished-at="2026-11-05T21:03:00 IST" duration-ms="2311">
     <groups>
     </groups>
-    <test started-at="2026-11-03T21:04:31 IST" name="Default test" finished-at="2026-11-03T21:04:33 IST" duration-ms="2347">
-      <class name="apimethods.GetRequest">
-        <test-method signature="getusers()[pri:0, instance:apimethods.GetRequest@470f1802]" started-at="2026-11-03T21:04:31 IST" name="getusers" finished-at="2026-11-03T21:04:33 IST" duration-ms="2297" status="FAIL">
+    <test started-at="2026-11-05T21:02:58 IST" name="Default test" finished-at="2026-11-05T21:03:00 IST" duration-ms="2311">
+      <class name="bddAPIMethods.GetUserBDD">
+        <test-method signature="getuserdata1()[pri:0, instance:bddAPIMethods.GetUserBDD@63021689]" started-at="2026-11-05T21:02:58 IST" name="getuserdata1" finished-at="2026-11-05T21:03:00 IST" duration-ms="2239" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
+              <![CDATA[expected [201] but found [200]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.java:569)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.java:932)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:163)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:168)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at apimethods.GetRequest.getusers(GetRequest.java:26)
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at bddAPIMethods.GetUserBDD.getuserdata1(GetUserBDD.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:583)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -55,8 +53,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getusers -->
-      </class> <!-- apimethods.GetRequest -->
+        </test-method> <!-- getuserdata1 -->
+      </class> <!-- bddAPIMethods.GetUserBDD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
