@@ -45,7 +45,7 @@ public class GetUserBDD
 		
 		Response response=
 		given().
-		when().get("/employees/16");
+		when().get("/employees/57");
 		
 		int statuscode=response.statusCode();
 		Assert.assertEquals(statuscode, 200);
@@ -54,10 +54,10 @@ public class GetUserBDD
 		Assert.assertEquals(statusline, "HTTP/1.1 200 OK");
 		
 		int empid=response.jsonPath().getInt("employee.id");
-		Assert.assertEquals(empid, 16);
+		Assert.assertEquals(empid, 57);
 		
 		String empname=response.jsonPath().getString("employee.name");
-		Assert.assertEquals(empname, "Mr.Jhonson");
+		Assert.assertEquals(empname, "sssss");
 	}
 
 }
