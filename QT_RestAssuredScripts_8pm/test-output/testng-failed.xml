@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="bddAPIMethods.GetUserBDD">
+      <class name="parameters.File_Upload_Download">
         <methods>
-          <include name="getuserdata1"/>
+          <include name="MultipleFilesUpload"/>
         </methods>
-      </class> <!-- bddAPIMethods.GetUserBDD -->
+      </class> <!-- parameters.File_Upload_Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

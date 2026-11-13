@@ -1,0 +1,197 @@
+//Response response=RestAssured.get("https://qualitythoughtnew-employee-api.onrender.com/employees/6");
+//System.out.println(response.prettyPrint());
+//System.out.println(response.asPrettyString());
+//System.out.println(response.getStatusCode());
+		
+
+
+API Testing:
+-----------
+1.UI 
+2.API 
+3.Database
+
+Own APIS:Local 
+
+Cloud API:QT  
+
+RestAssured:REST:Java Library 
+TestNG 
+Data Driven 
+BDD Cucumber 
+
+CRUD:Postman and Restassured SCript 
+
+EclipseIDE 
+Java[JDK]
+RestAssured
+TestNG 
+Maven Project
+
+https://mvnrepository.com/
+
+@Test 
+Method()
+Main Method 
+
+POST PUT PATCH:Body 
+JSONOBJECT
+Parameters:Query Path
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static  io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.http.Headers;
+import io.restassured.http.Header;
+
+POST PUT PATCH
+
+String Data 
+JSONOBJECT:Static Data 
+
+JSON External File
+ Path & Query Parameters
+Request Headers & Cookies
+File Upload and Download
+Pagination
+Filtering 
+Sorting 
+
+JSON Schema Validation
+Serialization:POJO to JSON 
+De-Serialization:JSON to POJO 
+
+Authorizations 
+
+Authentication- Valid or not
+Authorization: Access 
+
+
+https://qualitythoughtnew-employee-api.onrender.com/employees
+
+https://qualitythoughtnew-employee-api.onrender.com/employees/24
+
+https://qualitythoughtnew-employee-api.onrender.com/employees?name="Ajit Rao"&id=24
+
+{
+    "message": "Employee retrieved successfully",
+    "employee": {
+        "id": 24,
+        "name": "Ajit Rao",
+        "email": "Ajit@gmail.com",
+        "salary": "97000.00"
+    }
+	
+	http://localhost:3000
+	http://localhost:3000/api/files
+	"filename": "af2b960a-0da6-4af8-a62b-3e6d8d9026cf.txt",
+
+
+AEC:Aaa9EJqw5Vb-ff3BjFYHSZcQM3D-vb3OHMnG11g4-mKR_9tykWJnVhc-7ZU
+
+Aaa9EJoVWyXMggPDWaOFvKtXvvkHwDeQgfyyMcjHPaZUiLs46Z7eXAz4OYo
+
+Aaa9EJraH4YHypD92HD-bUaR7RBYE_GuLDhj0HU2wKuj9aJIZwE3a8fICE0
+
+521-9900112-2294536
+
+521-9900112-2294536
+
+File Upload and Download:
+---------------------
+http://localhost:3000/api/files/upload/single
+http://localhost:3000/api/files/upload/multiple
+http://localhost:3000/api/files/download/FILENAME
+
+PDF documents
+Images (JPG, PNG)
+Excel files (XLSX)
+Text files (TXT)
+Word documents (DOCX)
+Videos
+
+{
+            "originalName": "HTML.txt",
+            "filename": "e44a0633-ef57-4639-a518-9a1bf7e0f22b.txt",
+            "size": 179
+        },
+        {
+            "originalName": "Typescript - Offline Test-1.docx",
+            "filename": "7b7618a4-dbc3-4fd7-beb7-b6dcd73e0e85.docx",
+            "size": 9981
+        }
+		
+		3217ca44-bf1f-4800-b7a2-a0021b82ec11.jpg
+		
+
+Upload:POST and Download:GET 
+POST: 
+
+Text Files 
+PDF 
+Word 
+Images
+Videos 
+
+http://localhost:3000/api/files/upload/single
+http://localhost:3000/api/files/upload/multiple
+http://localhost:3000/api/files/download/FILENAME
+
+{
+    "message": "File uploaded successfully",
+    "originalName": "SampleFile.txt",
+    "filename": "2049bdc2-16d6-44fd-94be-d0c76f580fd9.txt",
+    "size": 41
+}
+
+Sample Schema:
+------------
+const schema = {
+    "$ref": "#/definitions/Welcome4",
+    "definitions": {
+        "Welcome4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "employee": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "integer"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "salary": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "email",
+                        "id",
+                        "name",
+                        "salary"
+                    ]
+                }
+            },
+            "required": [
+                "message",
+                "employee"
+            ]
+        }
+    }
+};
+
+pm.test("JSON Schema Validation", function () {
+    pm.response.to.have.jsonSchema(schema);
+});
